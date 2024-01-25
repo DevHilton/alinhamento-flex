@@ -1,124 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
- <style> 
- body{
-    font-family: Arial, sans-serif;
-    background-image:linear-gradient(to right, rgb(20,147,220), rgb(17,54, 71));
- }  
-  .box{
-    position: absolute;    
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 15px;
-    border-radius: 15px;
-   width:20% ;
-   color: white;
-  }
-fieldset{
-    border: 1px solid   dodgerblue;
-}
-legend{
-    border: 1px solid dodgerblue;
-    padding: 10px;
-    text-align: center;
-    background-color: dodgerblue;
-    border-radius: 8px;
-
-}
-.inputBox{
-    position: relative;
-}
-.inputUser{
-    background: none;
-    border: none;
-    border-bottom:1px solid white ;
-    outline: none;
-    color: white;
-    font-size: 15px;
-    width: 100%;
-    letter-spacing: 2px;
-    color: white;
-}
-.inputUser:focus ~ .labelInput{
-top: -20px;
-font-size: 12px;
-color: dodgerblue;
-}
-.labelInput{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    pointer-events: none ;
-    transition:  0.5s;
-}
-
-
- </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Links do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+  <!-- Link do nosso arquivo CSS -->
+  <link rel="stylesheet" href="style.css">
+  <title>Proz Educação</title>
 </head>
-<div class="box">
+
 <body>
-<div class="flex-container">
-    <form action="">
-        <fieldset>
-        <legend><b>Fórmulario de Cliente</b></legend>  
-        <br>     
-                <div class="inputBox">
-                <input type="text" name="nome" id="nome" class="inputUser" required>
-                <label for="nome" class="labelInput">Nome Completo</label>
-            </div>
-            <br>
-             <div class="inputBox">                
-                 <input type="text" name="email" id="email" class="inputUser" required>
-                <label for="email" class="labelInput">Email</label>
-                </div>
-                <br>
-                <div class="inputBox">
-                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
-                    <label for="telefone" class="labelInput">Telefone</label>
-                </div>
-                <br>
-                <p>Sexo:</p>
-                <input type="radio" id="masculino" name="genero" name="genero" value="masculino"required>
-                <label for="masculino">Masculino</label>                
-                <input type="radio" id="feminino" name="genero" name="genero" value="feminino"required>
-                <label for="feminino">Feminino</label>
-                <input type="radio" id="outros" name="genero" value="outros"required>
-                <label for="outros">Outros</label><br><br>
+  <header id="cabeca">
+    <img src="./img/logotipo_proz.svg" alt="logotipo da Proz Educação">
+    <nav  id="conteudo">
+      <ul>
+        <li class="button" id="btn01">
+          <a href="">Quem Somos</a>
+        </li>
+        <li>
+          <a href="">Cursos</a>
+        </li>
+        <li>
+          <a href="">Unidades</a>
+        </li>
+        <li>
+          <a href="">Blog</a>
+        </li>
+        <li id="menu-mobile"><img width="30px" src="img/botao-de-menu.png" alt=""></li>
+      </ul>
+     
+    </nav>
+  </header>
+  <main>
+    <h1>Proz</h1>
+    <h2>ProZ: conheça o site de oportunidades para tradutores freelancers</h2>
+    
+    <section >
+      <article id="artigo-1">
+        <div class="artigo">
+<img  src="img/proz-1170x781.jpg.webp" alt="">
+<p>O trabalho freelancer está em expansão no mercado, com demandas em diversos segmentos da economia. Exemplo disso é a ProZ, uma comunidade online que oferece oportunidades de trabalho no nicho de tradução e interpretação.
 
-                <div class="inputBox">
-                     <label for="data_nascimento"><b>Data de Nascimento:</b></label>
-                    <input type="date" name="data_nascimento" id="data_nascimento" class="inputUser" required>                   
-                </div><br>
-                <div class="inputBox">
-                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
-                    <label for="cidade" class="labelInput">Cidade</label>
-                </div><br>
-                <div class="inputBox">
-                    <input type="text" name="estado" id="estado" class="inputUser" required>
-                    <label for="estado" class="labelInput">Estado</label>
-                </div><br>
-                <div class="inputBox">
-                    <input type="text" name="endereco" id="endereco" class="inputUser" required>
-                    <label for="endereco" class="labelInput">Endereco</label>
-                </div><br>
-                <div class="inputBox">
-                    <input type="cep" name="cep" id="cep" class="inputUser" required>
-                    <label for="cep" class="labelInput">Cep</label>
-                </div>
-                <br>
-                <input type="submit" name="submit" id="submit">
+  Trata-se de uma plataforma que divulga ofertas para quem deseja trabalhar como freelancer, facilitando o acesso aos clientes — um serviço moderno e totalmente digital, permitindo a monetização, inclusive, em outras moedas, o que é extremamente vantajoso.
+  
+  Neste post, você vai saber o que é a plataforma ProZ e como ela surgiu no mercado para aproximar clientes e freelancers em dólar, gerando oportunidades. Continue lendo e veja também as vantagens que a ProZ oferece e se vale a pena se associar e ter novas possibilidades!</p>
 
-               
-        </fieldset>
-    </form>
+<span class="divsao"></span>
+
+  <div class="artigo2">
+   
+   
+   <img src="img/i322916.jpeg" alt="tec">
+   <p>Em termos gerais, tecnologia é a aplicação do conhecimento científico aos objetivos práticos da vida humana ou à mudança e manipulação do ambiente. Técnicas, equipamentos, robôs e demais coisas que ajudam na rotina das pessoas podem ser considerados objetos tecnológicos.
+    Qual a origem do termo "tecnologia"?
+    O termo "tecnologia", próximo ao sentido moderno, remonta ao início do século XVII e representava o tratamento sistemático do conhecimento. Muitos anos antes, os gregos usavam uma palavra similar (algo como "tecno") para designar a arte de saber como fazer coisas aplicável à arquitetura, engenharia e construção.
+
+   </p>
+   
+ 
+  </div>
+  </article>
 </div>
-</div>
+
+      
+    </section>
+  </main>
+  <footer>
+   <p> &#169; Hilton Freitas de Oliveira junior</p></div>
+  </footer>
 </body>
+
 </html>
